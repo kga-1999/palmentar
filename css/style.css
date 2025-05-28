@@ -960,5 +960,16 @@ input[type=radio] {
 #item-3:checked ~ .player #test  {
   transform: translateY(-80px);
 }
+/* للشاشات الصغيرة (التلفونات) */
+@media (max-width: 768px) {
+    body {
+        font-size: 14px;
+        margin: 0;
+        padding: 10px;
+    }
+    .container {
+        flex-direction: column;
+    }
+}
 
 /* end */
