@@ -109,7 +109,7 @@ html {
 
 .logo {
   font-family: var(--ff-rubik-dirt);
-  font-size: 22px;
+  font-size:18px;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   padding: 0 1.2rem;
