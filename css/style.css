@@ -87,35 +87,25 @@ html {
   background: rgba(0, 0, 0, 0.2);
   backdrop-filter: saturate(180%) blur(10px);
   display: flex;
-  gap: 10px;
   width: 100%;
   justify-content: space-between;
   align-items: center;
-  padding: 12px;
+  padding: 12px 5px;
   z-index: 10;
   color: whitesmoke;
-}
-.img2.navbar{
-  width: 80px;
-  height: auto;
+
 }
 @media (max-width: 600px) {
-	
-	  flex-direction: column;
-    align-items: center;
-	  text-align: center
-}
-}
   .navbar {
-    max-width: 80px; /* تقليص حجم الشعار */
-    margin-bottom: 10px; /* إضافة فراغ بين الشعار والاسم */;
-	  left:0;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
   }
-  
+  }
 
 .logo {
-   font-family: var(--ff-rubik-dirt);
-  font-size: 18px;
+  font-family: var(--ff-rubik-dirt);
+  font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   padding: 0 1.2rem;
@@ -124,10 +114,7 @@ html {
    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), /* ظل غامق */
                    -2px -2px 4px rgb(248, 231, 231); /* ظل بلون مختلف */;
   
-  
-  
 }
-
 
 .nav-links {
   display: flex;
