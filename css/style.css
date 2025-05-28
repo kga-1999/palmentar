@@ -96,7 +96,7 @@ html {
   color: whitesmoke;
 }
 .img2.navbar{
-  width: 60px;
+  width: 80px;
   height: auto;
 }
 @media (max-width: 600px) {
@@ -108,13 +108,16 @@ html {
   }
 
 .logo {
-  font-family: var(--ff-rubik-dirt);
-  font-size:20px;
+   font-family: var(--ff-rubik-dirt);
+  font-size: 22px;
   text-transform: uppercase;
   letter-spacing: 0.4rem;
   padding: 0 1.2rem;
-  font-weight: bold;
-  color: #222); 
+  font-weight: 300;
+  color: rgb(219, 188, 10); 
+   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), /* ظل غامق */
+                   -2px -2px 4px rgb(248, 231, 231); /* ظل بلون مختلف */;
+  
   
   
 }
