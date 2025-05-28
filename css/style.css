@@ -978,5 +978,45 @@ input[type=radio] {
         flex-direction: column;
     }
 }
+/* تعديل تنسيق الشعار والاسم */
+.navbar span {
+  display: flex;
+  align-items: center;
+}
 
+.img2 {
+  max-width: 80px; /* تقليل حجم الشعار على الجوال */
+  height: auto;
+}
+
+.logo {
+  font-size: 20px;
+  color: rgb(219, 188, 10);
+  margin-left: 10px;
+  white-space: nowrap; /* منع الاسم من التداخل */
+}
+
+/* تحسين مكان زر تبديل الوضع الليلي */
+.dark {
+  margin-left: 20px;
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .img2 {
+    max-width: 60px; /* تقليل حجم الشعار أكثر */
+  }
+
+  .logo {
+    font-size: 18px; /* تصغير النص */
+  }
+
+  .dark {
+    margin-top: 10px; /* إضافة مسافة بين العناصر */
+  }
+}
 /* end */
