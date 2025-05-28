@@ -967,56 +967,116 @@ input[type=radio] {
 #item-3:checked ~ .player #test  {
   transform: translateY(-80px);
 }
-/* للشاشات الصغيرة (التلفونات) */
-@media (max-width: 768px) {
-    body {
-        font-size: 14px;
-        margin: 0;
-        padding: 10px;
-    }
-    .container {
-        flex-direction: column;
-    }
-}
-/* تعديل تنسيق الشعار والاسم */
-.navbar span {
-  display: flex;
-  align-items: center;
-}
+<style>
+        :root {
+            --primary-color: #fc036b;
+            --secondary-color: rgb(219, 188, 10);
+            --text-color: whitesmoke;
+        }
 
-.img2 {
-  max-width: 80px; /* تقليل حجم الشعار على الجوال */
-  height: auto;
-}
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
 
-.logo {
-  font-size: 20px;
-  color: rgb(219, 188, 10);
-  margin-left: 10px;
-  white-space: nowrap; /* منع الاسم من التداخل */
-}
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 10px 20px;
+            position: fixed;
+            width: 100%;
+            z-index: 1000;
+        }
 
-/* تحسين مكان زر تبديل الوضع الليلي */
-.dark {
-  margin-left: 20px;
-}
+        .navbar span {
+            display: flex;
+            align-items: center;
+        }
 
-@media (max-width: 768px) {
-  .navbar {
-    flex-direction: column;
-    align-items: center;
-  }
+        .navbar img {
+            max-width: 60px;
+            height: auto;
+        }
 
-  .img2 {
-    max-width: 60px; /* تقليل حجم الشعار أكثر */
-  }
+        .navbar .logo {
+            font-size: 20px;
+            color: var(--secondary-color);
+            margin-left: 10px;
+            text-transform: uppercase;
+            white-space: nowrap;
+        }
 
-  .logo {
-    font-size: 18px; /* تصغير النص */
-  }
+        .nav-links {
+            display: flex;
+            list-style: none;
+        }
 
-  .dark {
-    margin-top: 10px; /* إضافة مسافة بين العناصر */
-  }
-}
+        .nav-links li {
+            margin: 0 10px;
+        }
+
+        .nav-links a {
+            color: var(--text-color);
+            text-decoration: none;
+            padding: 5px 10px;
+            border-radius: 5px;
+        }
+
+        .nav-links a:hover {
+            background: var(--primary-color);
+        }
+
+        .menu-btn {
+            display: none;
+            cursor: pointer;
+        }
+
+        .menu-btn img {
+            max-width: 30px;
+        }
+
+        .dark {
+            margin-left: 20px;
+        }
+
+        @media (max-width: 768px) {
+            .nav-links {
+                display: none;
+                flex-direction: column;
+                position: absolute;
+                top: 70px;
+                left: 0;
+                background: rgba(0, 0, 0, 0.9);
+                width: 100%;
+                padding: 20px 0;
+            }
+
+            .nav-links.show {
+                display: flex;
+            }
+
+            .menu-btn {
+                display: block;
+            }
+
+            .navbar span {
+                justify-content: space-between;
+                width: 100%;
+            }
+
+            .navbar img {
+                max-width: 50px;
+            }
+
+            .logo {
+                font-size: 18px;
+            }
+
+            .dark {
+                margin-top: 10px;
+            }
+        }
+    </style>
 /* end */
